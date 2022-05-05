@@ -35,7 +35,7 @@ public class TestsLesson10Tests {
 
     @Test(priority = 2)
     public void ngWebdriverTest() {
-        driver.get("https://dgotlieb.github.io/AngularJS/main.html");
+        driver.navigate().to("https://dgotlieb.github.io/AngularJS/main.html");
         WebElement firstName = driver.findElement(ByAngular.model("firstName"));
         firstName.clear();
         firstName.sendKeys("Eli");
@@ -51,14 +51,14 @@ public class TestsLesson10Tests {
     public void calculatorWebdriverTest() {
         driver.get("https://dgotlieb.github.io/WebCalculator/");
         calculatorPage calc = new calculatorPage(driver);
-        calc.getWebElement(By.id("seven")).getSize();
+        calc.getWebElement(By.id(Constants.SEVEN)).getSize();
         calc.isElementVisible(By.id("six"));
-        int result = 18;
+        String result = "18";
         calc.pressThree();
         calc.pressMultiply();
         calc.pressSix();
         calc.pressEqual();
-        Assert.assertEquals(calc.getTextFromElement(By.id("screen")), String.valueOf(result));
+        Assert.assertEquals(calc.getTextFromElement(By.id("screen")), result);
     }
     @Test(priority = 4)
     public void NewTabTest() {
