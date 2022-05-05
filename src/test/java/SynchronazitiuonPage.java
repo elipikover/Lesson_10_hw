@@ -1,7 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SynchronazitiuonPage extends BasePage{
+public class SynchronazitiuonPage extends BasePage {
     private WebDriver driver;
 
     public SynchronazitiuonPage(WebDriver driver){

@@ -17,5 +17,6 @@ public class BasePage {
     }
     public WebElement getWebElement(By locator){
         return ChromeInstance.getdriverInstance().findElement(locator);
+
     }
 }
