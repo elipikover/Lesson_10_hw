@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class TestsLesson10Tests {
+public class Solution_lesson10 {
     public WebDriver driver = ChromeInstance.getdriverInstance();
 
     @BeforeClass
